@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mailAgent 개인정보처리방침</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 16px; line-height: 1.6; color: #222; background: #fff; }
+  h1 { font-size: 1.6em; }
+  h2 { font-size: 1.15em; margin-top: 1.6em; }
+  a { color: #1a5fb4; }
+</style>
+</head>
+<body>
+<h1>mailAgent 개인정보처리방침</h1>
+<p>시행일: 2026-10-22</p>
+
+<h2>1. 누가 쓰는가</h2>
+<p>mailAgent는 개발자 본인이 자기 PC에서 자기 Gmail 계정에만 사용하는 개인용 도구입니다. 다른 사용자에게 제공하지 않습니다.</p>
+
+<h2>2. 접근하는 Google 사용자 데이터</h2>
+<p>Gmail API의 <code>gmail.modify</code> 권한으로 다음을 사용합니다.</p>
+<ul>
+  <li>새 메일의 보낸 사람, 제목, 수신 시각, 본문 미리보기(snippet), 라벨</li>
+  <li>분류 결과에 따른 라벨 추가와 휴지통 이동 (영구 삭제는 하지 않습니다)</li>
+</ul>
+
+<h2>3. 어떻게 쓰는가</h2>
+<ul>
+  <li>메일 분류는 사용자 PC 안에서 실행되는 규칙과 로컬 언어 모델로 합니다. 메일 데이터를 외부 AI 서비스로 보내지 않습니다.</li>
+  <li>중요 메일 알림과 일일 요약은 사용자 본인의 카카오톡("나에게 보내기")으로 보냅니다. 여기에는 보낸 사람, 제목, 짧은 요약이 들어갑니다.</li>
+  <li>Google 사용자 데이터를 광고, 판매, 제3자 공유, 모델 학습에 쓰지 않습니다.</li>
+</ul>
+
+<h2>4. 저장과 보관</h2>
+<ul>
+  <li>처리 기록(보낸 사람, 제목, 판정, 처리 시각)은 사용자 PC의 로컬 데이터베이스에만 저장합니다. 메일 본문은 저장하지 않습니다.</li>
+  <li>인증 토큰은 사용자 PC에만 저장합니다.</li>
+  <li>사용자는 PC의 데이터 폴더를 지우거나 Google 계정 설정에서 앱 권한을 해제해 언제든 데이터와 접근 권한을 없앨 수 있습니다.</li>
+</ul>
+
+<h2>5. Google API 서비스 사용자 데이터 정책 준수</h2>
+<p>mailAgent가 Google API에서 받은 정보를 사용하고 다른 앱으로 전송하는 것은 제한적 사용(Limited Use) 요건을 포함한 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>을 따릅니다.</p>
+
+<h2>6. 문의</h2>
+<p>ljh8824@gmail.com</p>
+
+<hr>
+<div lang="en">
+<h2>Privacy Policy (English summary)</h2>
+<p>mailAgent is a personal tool used only by its developer, on the developer's own PC, with the developer's own Gmail account. Using the <code>gmail.modify</code> scope, it reads sender, subject, received time, snippet and labels of new messages, adds labels, and moves messages to Trash (never permanently deletes). Classification runs locally (rules and a local language model); mail data is not sent to external AI services. Notifications containing sender, subject and a short summary are sent only to the owner's own KakaoTalk. Processing records (no message bodies) and tokens are stored only on the owner's PC. Google user data is not sold, shared with third parties, used for advertising, or used to train models.</p>
+<p>mailAgent's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+<p>Contact: ljh8824@gmail.com</p>
+</div>
+</body>
+</html>
